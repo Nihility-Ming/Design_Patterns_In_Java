@@ -28,11 +28,13 @@ abstract class TextField
 
 class RedSkinFactory extends SkinFactory
 {
+	@Override
 	public Button createButton()
 	{
 		return new RedButton();
 	}
 	
+	@Override
 	public TextField createTextField()
 	{
 		return new RedTextField();
@@ -41,11 +43,13 @@ class RedSkinFactory extends SkinFactory
 
 class GreenSkinFactory extends SkinFactory
 {
+	@Override
 	public Button createButton()
 	{
 		return new GreenButton();
 	}
 	
+	@Override
 	public TextField createTextField()
 	{
 		return new GreenTextField();
@@ -54,6 +58,7 @@ class GreenSkinFactory extends SkinFactory
 
 class RedButton extends Button
 {
+	@Override
 	public void display()
 	{
 		System.out.println("红色的按钮");
@@ -62,6 +67,7 @@ class RedButton extends Button
 
 class RedTextField extends TextField
 {
+	@Override
 	public void display()
 	{
 		System.out.println("红色文本输入框");
@@ -70,6 +76,7 @@ class RedTextField extends TextField
 
 class GreenButton extends Button
 {
+	@Override
 	public void display()
 	{
 		System.out.println("绿色的按钮");
@@ -78,6 +85,7 @@ class GreenButton extends Button
 
 class GreenTextField extends TextField
 {
+	@Override
 	public void display()
 	{
 		System.out.println("绿色文本输入框");
